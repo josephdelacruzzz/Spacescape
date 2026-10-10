@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public enum GameState { Playing, GameOver, Won }
 
 public class GameManager : MonoBehaviour {
-
+    public static GameManager Instance { get; private set; }
     public GameState State { get; private set; } = GameState.Playing;
     public bool IsPlaying => State == GameState.Playing;
 
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour {
     private float bestHeight;
 
     void Awake() {
+        Instance = this;
         State = GameState.Playing;
     }
 
@@ -30,11 +32,28 @@ public class GameManager : MonoBehaviour {
             heightScore = Mathf.RoundToInt(bestHeight * 10f);
             UpdateUI();
         }
+        if (!IsPlaying && Input.GetKeyDown(KeyCode.R)) {
+            Restart();
+        }
     }
 
     private void UpdateUI() {
         if (scoreText != null) {
             scoreText.text = "Score: " + Score;
         }
+    }
+
+    public void GameOver() {
+        if (!IsPlaying)
+            return;
+
+        State = GameState.GameOver;
+        UpdateUI();
+
+        Debug.Log("GAME OVER. Score: " + Score);
+    }
+    
+    private void Restart() {
+        SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex );
     }
 }

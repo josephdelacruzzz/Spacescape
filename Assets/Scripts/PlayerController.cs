@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb;
     private Camera cam;
     private bool isGrounded, wasGrounded;
+    private bool hasBeenHit;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour {
         CheckGround();
         HandleJump();
         WrapAroundScreen();
+        CheckFellOffScreen();
     }
 
     private void CheckGround() {
@@ -46,5 +48,45 @@ public class PlayerController : MonoBehaviour {
             p.x = limit;
         }
         transform.position = p;
+    }
+
+    void OnTriggerEnter2D(Collider2D other) {
+        if (hasBeenHit)
+            return;
+
+        Asteroid asteroid = other.GetComponent<Asteroid>();
+
+        if (asteroid == null)
+            return;
+
+        Debug.Log("Player hit by asteroid.");
+
+        Destroy(asteroid.gameObject);
+        Die();
+    }
+
+    private void Die() {
+        if (hasBeenHit)
+            return;
+
+        hasBeenHit = true;
+
+        if (GameManager.Instance != null) {
+            GameManager.Instance.GameOver();
+        }
+
+        gameObject.SetActive(false);
+    }
+
+    private void CheckFellOffScreen() {
+        if (cam == null || hasBeenHit)
+            return;
+
+        float bottomLimit = cam.transform.position.y - cam.orthographicSize - 1f;
+
+        if (transform.position.y < bottomLimit) {
+            Debug.Log("Player fell off the screen.");
+            Die();
+        }
     }
 }

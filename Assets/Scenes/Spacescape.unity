@@ -166,6 +166,53 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &136674733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 136674735}
+  - component: {fileID: 136674734}
+  m_Layer: 0
+  m_Name: AsteroidSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &136674734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136674733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7c824a660534ff193b3dffbe6fb654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AsteroidSpawner
+  asteroidPrefab: {fileID: 4200866830289412992, guid: 67024c8f48a0e4e12819aeec8998a469, type: 3}
+  spawnInterval: 2.5
+  fallSpeed: 3
+--- !u!4 &136674735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136674733}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &365780420
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,13 +259,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Levels
   platform: {fileID: 34422150841934901, guid: 5e5a1d56ba06e4a978ba6ff656b4ecf2, type: 3}
   mothership: {fileID: 1218725135}
-  platformCount: 45
+  platformCount: 50
   firstGroundY: -5
   minGap: 2.1
-  maxGap: 3.6
+  maxGap: 2.3
   startWidth: 3
   endWidth: 1.5
-  horizontalStep: 4
+  horizontalStep: 3.8
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1306,3 +1353,4 @@ SceneRoots:
   - {fileID: 1369642846}
   - {fileID: 1816727433}
   - {fileID: 112738905}
+  - {fileID: 136674735}
