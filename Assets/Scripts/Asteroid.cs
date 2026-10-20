@@ -3,6 +3,8 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour {
 
     private int size = 1;
+    public int pointsPerSize = 10;
+    private int asteroidHealth = 1;
     private Rigidbody2D rb;
     private Camera cam;
 
@@ -13,8 +15,23 @@ public class Asteroid : MonoBehaviour {
 
     public void Init(int sizeLevel, float fallSpeed) {
         size = sizeLevel;
+        asteroidHealth = sizeLevel;
         transform.localScale = Vector3.one * (0.5f + 0.4f * sizeLevel); 
         rb.linearVelocity = new Vector2(0f, -fallSpeed);
+    }
+
+    public void TakeDamage(int amount) {
+        asteroidHealth -= amount;
+
+        if (asteroidHealth <= 0)
+            Break();
+    }
+
+    private void Break() {
+        if (GameManager.Instance != null)
+            GameManager.Instance.AddKillScore(pointsPerSize * size );
+
+        Destroy(gameObject);
     }
 
     void Update() {

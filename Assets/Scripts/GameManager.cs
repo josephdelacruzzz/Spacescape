@@ -12,9 +12,10 @@ public class GameManager : MonoBehaviour {
     public PlayerController player;
     public Transform mothership;
     public TMP_Text scoreText;
-    public int Score => heightScore;
+    public int Score => heightScore + killScore;
     private float startY;
     private int heightScore;
+    private int killScore;
     private float bestHeight;
 
     void Awake() {
@@ -32,15 +33,21 @@ public class GameManager : MonoBehaviour {
             heightScore = Mathf.RoundToInt(bestHeight * 10f);
             UpdateUI();
         }
-        if (!IsPlaying && Input.GetKeyDown(KeyCode.R)) {
+        if (!IsPlaying && Input.GetKeyDown(KeyCode.R))
             Restart();
-        }
+    }
+
+    public void AddKillScore(int points) {
+        if (!IsPlaying)
+            return;
+
+        killScore += points;
+        UpdateUI();
     }
 
     private void UpdateUI() {
-        if (scoreText != null) {
+        if (scoreText != null)
             scoreText.text = "Score: " + Score;
-        }
     }
 
     public void GameOver() {
