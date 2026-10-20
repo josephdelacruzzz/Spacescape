@@ -11,6 +11,8 @@ public class Levels : MonoBehaviour {
     public float startWidth = 3f;
     public float endWidth = 1.8f;
     public float horizontalStep = 4f; 
+    public GameObject ShieldPickup;
+    public int pickupEveryNPlatforms = 12;
     //public int seed = 1;
 
     void Awake() {
@@ -40,6 +42,9 @@ public class Levels : MonoBehaviour {
 
             GameObject p = Instantiate(platform, new Vector3(x, y, 0f), Quaternion.identity, parent);
             p.transform.localScale = new Vector3(width, 0.4f, 1f);
+
+            if (ShieldPickup != null && i > 0 && i % pickupEveryNPlatforms == 0) 
+                Instantiate(ShieldPickup, new Vector3(x, y + 0.8f, 0f), Quaternion.identity, parent);
         }
 
         mothership.position = new Vector3(0f, y + 4f, 0f);

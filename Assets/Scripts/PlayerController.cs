@@ -55,10 +55,16 @@ public class PlayerController : MonoBehaviour {
             return;
 
         Asteroid asteroid = other.GetComponent<Asteroid>();
-
+        Shield shield = GetComponent<Shield>();
         if (asteroid == null)
             return;
 
+        if (shield != null && shield.isActive) {
+            shield.OnShieldHit();
+            asteroid.Break();
+            return;
+        }
+            
         Debug.Log("Player hit by asteroid.");
 
         Destroy(asteroid.gameObject);

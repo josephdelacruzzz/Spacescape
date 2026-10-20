@@ -27,7 +27,7 @@ public class Asteroid : MonoBehaviour {
             Break();
     }
 
-    private void Break() {
+    public void Break() {
         if (GameManager.Instance != null)
             GameManager.Instance.AddKillScore(pointsPerSize * size );
 
