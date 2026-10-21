@@ -4,13 +4,18 @@ public class AsteroidSpawner : MonoBehaviour {
     public GameObject asteroidPrefab;
     public float spawnInterval = 2.5f;
     public float fallSpeed = 3f;
+    public float firstSpawnDelay = 2.25f;
+    public float startInterval = 1.5f;
+    public float endInterval = 0.5f;
+    public float startSpeed = 2.5f;
+    public float endSpeed = 7f;
 
     private Camera cam;
     private float timer;
 
     void Start() {
         cam = Camera.main;
-        timer = spawnInterval;
+        timer = firstSpawnDelay;
     }
 
     void Update() {
@@ -21,7 +26,7 @@ public class AsteroidSpawner : MonoBehaviour {
 
         if (timer <= 0f) {
             SpawnAsteroid();
-            timer = spawnInterval;
+            timer = Mathf.Lerp(startInterval, endInterval, GameManager.Instance.Progress);
         }
     }
 
@@ -36,7 +41,8 @@ public class AsteroidSpawner : MonoBehaviour {
         Asteroid asteroid = asteroidObject.GetComponent<Asteroid>();
 
         if (asteroid != null) {
-            asteroid.Init(sizeLevel,fallSpeed);
+            float currentSpeed = Mathf.Lerp(startSpeed, endSpeed, GameManager.Instance.Progress );
+            asteroid.Init(sizeLevel,currentSpeed);
         }
     }
 }

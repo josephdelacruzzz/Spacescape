@@ -54,6 +54,18 @@ public class PlayerController : MonoBehaviour {
         if (hasBeenHit)
             return;
 
+        if (other.CompareTag("Goal")) {
+            hasBeenHit = true;
+            if (GameManager.Instance != null) 
+                GameManager.Instance.Win();
+
+            if (rb != null) 
+                rb.linearVelocity = Vector2.zero;
+
+            gameObject.SetActive(false);
+            return;
+        }
+        
         Asteroid asteroid = other.GetComponent<Asteroid>();
         Shield shield = GetComponent<Shield>();
         if (asteroid == null)

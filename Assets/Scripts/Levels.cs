@@ -15,6 +15,10 @@ public class Levels : MonoBehaviour {
     public int pickupEveryNPlatforms = 12;
     //public int seed = 1;
 
+    public float crossScreenChance = 0.25f;
+    public float edgeBand = 2f;
+    public int crossScreenCooldown = 3;
+
     void Awake() {
         Build();
     }
@@ -29,15 +33,58 @@ public class Levels : MonoBehaviour {
         float y = firstGroundY;
         float prevX = 0f;
 
+        bool prepareCrossScreen = false;
+        int crossScreenCooldownRemaining = 0;
+
+
         for (int i = 0; i < platformCount; i++) {
             float t = i / (float)(platformCount - 1); 
             y += Mathf.Lerp(minGap, maxGap, t);
             float width = Mathf.Lerp(startWidth, endWidth, t);
 
-            float limit = halfWidth - width / 2f; 
-            float x = Random.Range(-limit, limit);
-            x = Mathf.Clamp(x, prevX - horizontalStep, prevX + horizontalStep);
-            x = Mathf.Clamp(x, -limit, limit);
+            // float limit = halfWidth - width / 2f; 
+            // float x = Random.Range(-limit, limit);
+            // x = Mathf.Clamp(x, prevX - horizontalStep, prevX + horizontalStep);
+            // x = Mathf.Clamp(x, -limit, limit);
+            // prevX = x;
+
+            float limit = halfWidth - width / 2f;
+            float x;
+
+            bool crossScreenJump = prepareCrossScreen && i > 2;
+
+            if (crossScreenJump){
+                float band = Mathf.Min(edgeBand, limit);
+
+                if (prevX >= 0f)
+                    x = Random.Range(-limit, -limit + band);
+                else
+                    x = Random.Range(limit - band, limit);
+
+                prepareCrossScreen = false;
+                crossScreenCooldownRemaining = crossScreenCooldown;
+            } else {
+                bool startCrossScreenRoute = i > 2 && !prepareCrossScreen && crossScreenCooldownRemaining <= 0 && Random.value < crossScreenChance;
+
+                if (startCrossScreenRoute) {
+                    float edge = Random.value < 0.5f
+                        ? -limit
+                        : limit;
+
+                    x = Mathf.Clamp(edge, prevX - horizontalStep, prevX + horizontalStep);
+
+                    x = Mathf.Clamp(x, -limit, limit);
+                    prepareCrossScreen = true;
+                } else {
+                    x = Random.Range(-limit, limit);
+                    x = Mathf.Clamp(x, prevX - horizontalStep, prevX + horizontalStep);
+                    x = Mathf.Clamp(x, -limit, limit);
+
+                    if (crossScreenCooldownRemaining > 0)
+                        crossScreenCooldownRemaining--;
+                }
+            }
+
             prevX = x;
 
             GameObject p = Instantiate(platform, new Vector3(x, y, 0f), Quaternion.identity, parent);
