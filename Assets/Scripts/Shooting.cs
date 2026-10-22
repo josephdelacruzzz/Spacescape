@@ -5,12 +5,14 @@ public class Shooting : MonoBehaviour {
     public GameObject projectilePrefab;
     public Transform gun;
     public Transform fire;
-    public float fireCooldown = 0.3f;
+    public float fireCooldown = 0.5f;
     private Camera cam;
     private float nextFireTime;
+    private OneShot oneShot;
 
     void Start(){
         cam = Camera.main;
+        oneShot = GetComponent<OneShot>();
     }
 
     void LateUpdate() {
@@ -40,6 +42,9 @@ public class Shooting : MonoBehaviour {
 
         GameObject projectileObject = Instantiate(projectilePrefab, fire.position, Quaternion.identity);
         Projectile projectile = projectileObject.GetComponent<Projectile>();
+
+        if (oneShot != null && oneShot.isActive)
+            projectile.damage = 999;
 
         if (projectile != null)
             projectile.Launch(direction);

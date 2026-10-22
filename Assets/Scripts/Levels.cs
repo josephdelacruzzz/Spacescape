@@ -12,7 +12,7 @@ public class Levels : MonoBehaviour {
     public float endWidth = 1.8f;
     public float horizontalStep = 4f; 
     public GameObject ShieldPickup;
-    public int pickupEveryNPlatforms = 12;
+    public float shieldChance = 0.1f;
     //public int seed = 1;
 
     public float crossScreenChance = 0.25f;
@@ -27,6 +27,9 @@ public class Levels : MonoBehaviour {
 
     public GameObject springPrefab;
     public float springChance = 0.12f;
+
+    public GameObject OneShotPickup;
+    public float oneShotChance = 0.1f;
 
     void Awake() {
         Build();
@@ -98,12 +101,12 @@ public class Levels : MonoBehaviour {
                 }
             }
 
-            if (ShieldPickup != null && !isMoving && i > 0 && i % pickupEveryNPlatforms == 0) {
+            if (ShieldPickup != null && !isMoving && i > 0 && Random.value < shieldChance) {
                 Instantiate(ShieldPickup, new Vector3(x, y + 0.8f, 0f), Quaternion.identity, parent);
-            }
-
-            if (springPrefab != null && !isMoving && i > 2 && Random.value < springChance) {
-                Instantiate(springPrefab, new Vector3(x, y + 0.2f, 0f), Quaternion.identity, parent);
+            } else if (springPrefab != null && !isMoving && i > 2 && Random.value < springChance) {
+                Instantiate( springPrefab, new Vector3(x, y + 0.2f, 0f), Quaternion.identity, parent);
+            } else if (OneShotPickup != null && !isMoving && i > 2 && Random.value < oneShotChance){ 
+                Instantiate( OneShotPickup, new Vector3(x, y + 0.8f, 0f), Quaternion.identity, parent);
             }
         }
 

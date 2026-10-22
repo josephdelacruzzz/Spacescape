@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour {
     public Transform mothership;
     public TMP_Text scoreText;
     public TMP_Text shieldText;
-    public int Score => heightScore + killScore;
+    public TMP_Text oneShotText;
+    public int Score => heightScore + killScore + timeBonus;
     private float startY;
     private int heightScore;
     private int killScore;
@@ -32,6 +33,13 @@ public class GameManager : MonoBehaviour {
     public GameObject titlePanel;
     private static bool restartDirectly;
 
+    public TMP_Text timerText;
+    public int startingTime = 999;
+    public float timerSpeed = 1f;
+
+    private float timeRemaining;
+    private int timeBonus;
+
     void Awake() {
         Instance = this;
         if (restartDirectly) {
@@ -43,6 +51,7 @@ public class GameManager : MonoBehaviour {
     }
 
     void Start() {
+        timeRemaining = startingTime;
         startY = player.transform.position.y;
         if (mothership != null) 
             goalHeight = mothership.position.y - startY;
@@ -59,9 +68,10 @@ public class GameManager : MonoBehaviour {
                 titlePanel.SetActive(false);
             if (scoreText != null)
                 scoreText.gameObject.SetActive(true);
-
             if (shieldText != null)
                 shieldText.gameObject.SetActive(true);
+            if (oneShotText != null)
+                oneShotText.gameObject.SetActive(true);
         }
     }
 
@@ -77,6 +87,10 @@ public class GameManager : MonoBehaviour {
             scoreText.gameObject.SetActive(true);
         if (shieldText != null)
             shieldText.gameObject.SetActive(true);
+        if (oneShotText != null)
+            oneShotText.gameObject.SetActive(true);
+        if (timerText != null)
+            timerText.gameObject.SetActive(true);
     }
 
     void Update() {
@@ -86,6 +100,9 @@ public class GameManager : MonoBehaviour {
             return;
         }
         if (IsPlaying) {
+            timeRemaining -= Time.deltaTime * timerSpeed;
+            if (timeRemaining < 0f)
+                timeRemaining = 0f;
             bestHeight = Mathf.Max(bestHeight, player.transform.position.y - startY);
             heightScore = Mathf.RoundToInt(bestHeight * 10f);
             if (goalHeight > 0f) 
@@ -107,6 +124,9 @@ public class GameManager : MonoBehaviour {
     private void UpdateUI() {
         if (scoreText != null)
             scoreText.text = "Score: " + Score;
+        if (timerText != null) {
+            timerText.text = "Time: " + Mathf.CeilToInt(timeRemaining).ToString("000");
+        }
     }
 
     private void HideGameplayUI() {
@@ -115,6 +135,12 @@ public class GameManager : MonoBehaviour {
 
         if (shieldText != null)
             shieldText.gameObject.SetActive(false);
+
+        if (oneShotText != null)
+            oneShotText.gameObject.SetActive(false);
+
+        if (timerText != null)
+            timerText.gameObject.SetActive(false);
     }
 
     public void GameOver() {
@@ -145,6 +171,7 @@ public class GameManager : MonoBehaviour {
     public void Win() {
         if (!IsPlaying) 
             return;
+        timeBonus = Mathf.CeilToInt(timeRemaining);
 
         State = GameState.Won;
         HideGameplayUI();
@@ -153,7 +180,7 @@ public class GameManager : MonoBehaviour {
         if (winTitleText != null)
                 winTitleText.text = "YOU WIN!";
         if (winScoreText != null) 
-            winScoreText.text = "Score: " + Score + "\n\'R' to Restart";
+            winScoreText.text = "Score: " + Score + "\nTime Bonus: +" + timeBonus + "\n\'R' to Restart";
         if (winPanel != null) 
             winPanel.SetActive(true);
 
