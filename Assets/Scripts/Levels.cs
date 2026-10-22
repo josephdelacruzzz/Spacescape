@@ -19,6 +19,12 @@ public class Levels : MonoBehaviour {
     public float edgeBand = 2f;
     public int crossScreenCooldown = 3;
 
+    public float movingPlatformChance = 0.15f;
+    public float movingPlatformSpeed = 1.5f;
+    public float startingMovingSpeed = 1.5f;
+    public float endingMovingSpeed = 3.5f;
+    public float movingPlatformRange = 2f;
+
     void Awake() {
         Build();
     }
@@ -41,12 +47,6 @@ public class Levels : MonoBehaviour {
             float t = i / (float)(platformCount - 1); 
             y += Mathf.Lerp(minGap, maxGap, t);
             float width = Mathf.Lerp(startWidth, endWidth, t);
-
-            // float limit = halfWidth - width / 2f; 
-            // float x = Random.Range(-limit, limit);
-            // x = Mathf.Clamp(x, prevX - horizontalStep, prevX + horizontalStep);
-            // x = Mathf.Clamp(x, -limit, limit);
-            // prevX = x;
 
             float limit = halfWidth - width / 2f;
             float x;
@@ -89,9 +89,22 @@ public class Levels : MonoBehaviour {
 
             GameObject p = Instantiate(platform, new Vector3(x, y, 0f), Quaternion.identity, parent);
             p.transform.localScale = new Vector3(width, 0.4f, 1f);
+            bool isMoving = i > 3 && Random.value < movingPlatformChance;
+            if (isMoving){
+                MovingLevels movingScript = p.GetComponent<MovingLevels>();
+                if (movingScript == null) {
+                    movingScript =
+                    p.AddComponent<MovingLevels>();
+                }
+                if (movingScript != null) {
+                    float currentMovmentSpeed = Mathf.Lerp(startingMovingSpeed, endingMovingSpeed, t);
+                    movingScript.setMovement(currentMovmentSpeed, Mathf.Max(-limit, x-movingPlatformRange), Mathf.Min(limit, x+movingPlatformRange));
+                }
+            }
 
-            if (ShieldPickup != null && i > 0 && i % pickupEveryNPlatforms == 0) 
+            if (ShieldPickup != null && !isMoving && i > 0 && i % pickupEveryNPlatforms == 0) {
                 Instantiate(ShieldPickup, new Vector3(x, y + 0.8f, 0f), Quaternion.identity, parent);
+            }
         }
 
         mothership.position = new Vector3(0f, y + 4f, 0f);
