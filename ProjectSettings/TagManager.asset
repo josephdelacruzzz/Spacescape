@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Spring
+  - OneShotPickup
+  - Undefined
   - ShieldPickup
+  - Spring
   layers:
   - Default
   - TransparentFX

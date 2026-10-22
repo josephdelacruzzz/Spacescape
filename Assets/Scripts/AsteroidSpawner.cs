@@ -2,11 +2,13 @@ using UnityEngine;
 
 public class AsteroidSpawner : MonoBehaviour {
     public GameObject asteroidPrefab;
-    public float spawnInterval = 2.5f;
-    public float fallSpeed = 3f;
-    public float firstSpawnDelay = 2.25f;
-    public float startInterval = 1.5f;
+    // public float spawnInterval = 2.5f;
+    // public float fallSpeed = 3f;
+    public float firstSpawnDelay = 2.25f; //delay before first asteroid appears
+    //asteroid spawn interval speed
+    public float startInterval = 1.5f; 
     public float endInterval = 0.5f;
+    //asteroid falling speed
     public float startSpeed = 2.5f;
     public float endSpeed = 7f;
 
@@ -19,13 +21,14 @@ public class AsteroidSpawner : MonoBehaviour {
     }
 
     void Update() {
+        //doesnt spawn asteroids on panels
         if (GameManager.Instance != null && !GameManager.Instance.IsPlaying) 
             return;
         if (asteroidPrefab == null || cam == null)
             return;
 
+        //timer for interval of spawning asteroids
         timer -= Time.deltaTime;
-
         if (timer <= 0f) {
             SpawnAsteroid();
             timer = Mathf.Lerp(startInterval, endInterval, GameManager.Instance.Progress);
@@ -33,15 +36,15 @@ public class AsteroidSpawner : MonoBehaviour {
     }
 
     private void SpawnAsteroid() {
-        float halfWidth = cam.orthographicSize * cam.aspect;
-        float x = Random.Range( -halfWidth + 0.5f, halfWidth - 0.5f);
-        float y = cam.transform.position.y + cam.orthographicSize + 2f;
-        GameObject asteroidObject = Instantiate(asteroidPrefab, new Vector3(x, y, 0f), Quaternion.identity );
-
-        int sizeLevel = Random.Range(1, 4);
+        float halfWidth = cam.orthographicSize * cam.aspect; //calculate horizontal halfwidth of camera
+        float x = Random.Range( -halfWidth + 0.5f, halfWidth - 0.5f); //random posotion within camera view
+        float y = cam.transform.position.y + cam.orthographicSize + 2f; //spawnpoint above visible screen
+        GameObject asteroidObject = Instantiate(asteroidPrefab, new Vector3(x, y, 0f), Quaternion.identity ); //create asteroid at position
+        int sizeLevel = Random.Range(1, 4); //size of asteroid
 
         Asteroid asteroid = asteroidObject.GetComponent<Asteroid>();
 
+        //increase falling speed based on progress,  size randomly chosen
         if (asteroid != null) {
             float currentSpeed = Mathf.Lerp(startSpeed, endSpeed, GameManager.Instance.Progress );
             asteroid.Init(sizeLevel,currentSpeed);

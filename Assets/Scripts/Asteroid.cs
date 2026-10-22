@@ -13,6 +13,7 @@ public class Asteroid : MonoBehaviour {
         cam = Camera.main;
     }
 
+    //called by AsteroidSpawner after asteroid is instantiated
     public void Init(int sizeLevel, float fallSpeed) {
         size = sizeLevel;
         asteroidHealth = sizeLevel;
@@ -20,6 +21,7 @@ public class Asteroid : MonoBehaviour {
         rb.linearVelocity = new Vector2(0f, -fallSpeed);
     }
 
+    //projectile hits asteroid
     public void TakeDamage(int amount) {
         asteroidHealth -= amount;
 
@@ -27,6 +29,7 @@ public class Asteroid : MonoBehaviour {
             Break();
     }
 
+    //removes asteroid and gives points to player
     public void Break() {
         if (GameManager.Instance != null)
             GameManager.Instance.AddKillScore(pointsPerSize * size );
@@ -34,6 +37,7 @@ public class Asteroid : MonoBehaviour {
         Destroy(gameObject);
     }
 
+    //destroys asteroids if not in camera view to prevent buildup of asteroids
     void Update() {
         if (transform.position.y < cam.transform.position.y - cam.orthographicSize - 3f)
             Destroy(gameObject);

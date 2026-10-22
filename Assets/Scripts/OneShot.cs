@@ -4,23 +4,26 @@ using TMPro;
 public class OneShot : MonoBehaviour {
 
     public float oneShotDuration = 8f;
-    public TMP_Text oneShotText;
+    public TMP_Text oneShotText; //UI text display
     public bool isActive { get; private set; }
     private bool oneShotReady;
     private float timeLeft;
 
 
     void Start() {
-        UpdateUI();
+        UpdateUI(); //sets initial text
     }
 
     void Update() {
+        //input and timer deactivated if on panel
         if (GameManager.Instance != null && !GameManager.Instance.IsPlaying)
             return;
 
+        //activates one shot
         if (!isActive && oneShotReady && Input.GetKeyDown(KeyCode.F))
             ActivateOneShot();
         
+        //counts down duration
         if (isActive) {
             timeLeft -= Time.deltaTime;
             UpdateUI();
@@ -30,9 +33,8 @@ public class OneShot : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        if (!other.CompareTag("OneShotPickup"))
+        if (!other.CompareTag("OneShotPickup")) //only accepts oneshot pickups
             return;
-
         oneShotReady = true;
         Destroy(other.gameObject);
         UpdateUI();
@@ -41,17 +43,17 @@ public class OneShot : MonoBehaviour {
     }
 
     private void ActivateOneShot() {
+        //start active state and timer
         oneShotReady = false;
         isActive = true;
         timeLeft = oneShotDuration;
-
         UpdateUI();
         Debug.Log("OneShot activated.");
     }
 
     private void DeactivateOneShot() {
+        //oneshot deactivated after timer expires
         isActive = false;
-
         UpdateUI();
         Debug.Log("OneShot expired.");
     }
@@ -60,6 +62,7 @@ public class OneShot : MonoBehaviour {
         if (oneShotText == null)
             return;
 
+        //displays correct UI for oneshot
         if (isActive) {
             oneShotText.text = "OneShot: " + Mathf.CeilToInt(timeLeft) + "s";
         }

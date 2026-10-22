@@ -1,48 +1,50 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-
-public enum GameState { Title, Playing, GameOver, Won }
+public enum GameState {Title, Playing, GameOver, Won}
 
 public class GameManager : MonoBehaviour {
     public static GameManager Instance { get; private set; }
     public GameState State { get; private set; } = GameState.Playing;
     public bool IsPlaying => State == GameState.Playing;
 
+    [Header("Game References")]
     public PlayerController player;
     public Transform mothership;
+
+    [Header("UI")]
     public TMP_Text scoreText;
     public TMP_Text shieldText;
     public TMP_Text oneShotText;
+    public TMP_Text timerText;
+
+    [Header("Screens")]  
+    public GameObject winPanel;
+    public TMP_Text winScoreText;
+    public TMP_Text winTitleText;
+    public GameObject gameOverPanel;
+    public TMP_Text gameOverScoreText;
+    public TMP_Text gameOverTitleText;
+    public GameObject titlePanel;
+
+    [Header("Timer")]
+    public int startingTime = 999;
+    public float timerSpeed = 1f;
+
     public int Score => heightScore + killScore + timeBonus;
     private float startY;
     private int heightScore;
     private int killScore;
     private float bestHeight;
-    public float Progress { get; private set; }
+    public float Progress { get; private set; } // progress for difficulty
     private float goalHeight;
-
-    public GameObject winPanel;
-    public TMP_Text winScoreText;
-    public TMP_Text winTitleText;
-
-    public GameObject gameOverPanel;
-    public TMP_Text gameOverScoreText;
-    public TMP_Text gameOverTitleText;
-
-    public GameObject titlePanel;
     private static bool restartDirectly;
-
-    public TMP_Text timerText;
-    public int startingTime = 999;
-    public float timerSpeed = 1f;
-
     private float timeRemaining;
     private int timeBonus;
 
     void Awake() {
         Instance = this;
-        if (restartDirectly) {
+        if (restartDirectly) { //start gameplay when restarting, not title screen
             State = GameState.Playing;
             restartDirectly = false;
         } else {
@@ -51,8 +53,8 @@ public class GameManager : MonoBehaviour {
     }
 
     void Start() {
-        timeRemaining = startingTime;
-        startY = player.transform.position.y;
+        timeRemaining = startingTime; //begins timer
+        startY = player.transform.position.y; //starting height
         if (mothership != null) 
             goalHeight = mothership.position.y - startY;
         if (winPanel != null) 
@@ -63,7 +65,7 @@ public class GameManager : MonoBehaviour {
             if (titlePanel != null) 
                 titlePanel.SetActive(true);
             HideGameplayUI();
-        } else {
+        } else { //show correct gameplay ui
             if (titlePanel != null)
                 titlePanel.SetActive(false);
             if (scoreText != null)
@@ -72,9 +74,12 @@ public class GameManager : MonoBehaviour {
                 shieldText.gameObject.SetActive(true);
             if (oneShotText != null)
                 oneShotText.gameObject.SetActive(true);
+            if (timerText != null)
+                timerText.gameObject.SetActive(true);
         }
     }
 
+    //configure title screen correctly
     public void StartGame() {
         if (State != GameState.Title)
             return;
@@ -93,12 +98,16 @@ public class GameManager : MonoBehaviour {
             timerText.gameObject.SetActive(true);
     }
 
+    //calculates values
     void Update() {
+        //title -> start game
         if (State == GameState.Title) {
             if (Input.GetKeyDown(KeyCode.Return)) 
                 StartGame();
             return;
         }
+        
+        //timer, score, and progress updated while playing
         if (IsPlaying) {
             timeRemaining -= Time.deltaTime * timerSpeed;
             if (timeRemaining < 0f)
@@ -109,10 +118,13 @@ public class GameManager : MonoBehaviour {
                 Progress = Mathf.Clamp01((player.transform.position.y - startY) / goalHeight);
             UpdateUI();
         }
+
+        //restart
         if (!IsPlaying && Input.GetKeyDown(KeyCode.R))
             Restart();
     }
 
+    //score handling for UI after killing different sized asteroids
     public void AddKillScore(int points) {
         if (!IsPlaying)
             return;
@@ -121,6 +133,7 @@ public class GameManager : MonoBehaviour {
         UpdateUI();
     }
 
+    //refreshes UI with score and time in display
     private void UpdateUI() {
         if (scoreText != null)
             scoreText.text = "Score: " + Score;
@@ -129,6 +142,7 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    //hides gameplay during different panels.
     private void HideGameplayUI() {
         if (scoreText != null)
             scoreText.gameObject.SetActive(false);
@@ -143,14 +157,15 @@ public class GameManager : MonoBehaviour {
             timerText.gameObject.SetActive(false);
     }
 
+    //ends the game
     public void GameOver() {
         if (!IsPlaying)
             return;
-
         State = GameState.GameOver;
+
+        //updates UI correctly
         HideGameplayUI();
         UpdateUI();
-
         if (gameOverTitleText != null)
             gameOverTitleText.text = "GAME OVER!";
 
@@ -159,26 +174,27 @@ public class GameManager : MonoBehaviour {
 
         if (gameOverPanel != null)
             gameOverPanel.SetActive(true);
-
         Debug.Log("GAME OVER. Score: " + Score);
     }
     
+    //restarts the scene.
     public void Restart() {
         restartDirectly = true;
-        SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex );
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    //ends the game with win
     public void Win() {
         if (!IsPlaying) 
             return;
         timeBonus = Mathf.CeilToInt(timeRemaining);
 
+        //updates UI correctly
         State = GameState.Won;
         HideGameplayUI();
         UpdateUI();
-
         if (winTitleText != null)
-                winTitleText.text = "YOU WIN!";
+            winTitleText.text = "YOU WIN!";
         if (winScoreText != null) 
             winScoreText.text = "Score: " + Score + "\nTime Bonus: +" + timeBonus + "\n\'R' to Restart";
         if (winPanel != null) 
