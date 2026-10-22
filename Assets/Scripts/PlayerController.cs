@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update() {
+        if (GameManager.Instance != null && !GameManager.Instance.IsPlaying) 
+            return;
         float h = Input.GetAxisRaw("Horizontal"); 
         rb.linearVelocity = new Vector2(h * moveSpeed, rb.linearVelocity.y);
         CheckGround();
@@ -65,7 +67,7 @@ public class PlayerController : MonoBehaviour {
             gameObject.SetActive(false);
             return;
         }
-        
+
         Asteroid asteroid = other.GetComponent<Asteroid>();
         Shield shield = GetComponent<Shield>();
         if (asteroid == null)

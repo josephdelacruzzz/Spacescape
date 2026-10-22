@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public enum GameState { Playing, GameOver, Won }
+public enum GameState { Title, Playing, GameOver, Won }
 
 public class GameManager : MonoBehaviour {
     public static GameManager Instance { get; private set; }
@@ -29,9 +29,17 @@ public class GameManager : MonoBehaviour {
     public TMP_Text gameOverScoreText;
     public TMP_Text gameOverTitleText;
 
+    public GameObject titlePanel;
+    private static bool restartDirectly;
+
     void Awake() {
         Instance = this;
-        State = GameState.Playing;
+        if (restartDirectly) {
+            State = GameState.Playing;
+            restartDirectly = false;
+        } else {
+            State = GameState.Title;
+        }
     }
 
     void Start() {
@@ -42,9 +50,41 @@ public class GameManager : MonoBehaviour {
             winPanel.SetActive(false);
         if (gameOverPanel != null)
             gameOverPanel.SetActive(false);
+        if (State == GameState.Title) {
+            if (titlePanel != null) 
+                titlePanel.SetActive(true);
+            HideGameplayUI();
+        } else {
+            if (titlePanel != null)
+                titlePanel.SetActive(false);
+            if (scoreText != null)
+                scoreText.gameObject.SetActive(true);
+
+            if (shieldText != null)
+                shieldText.gameObject.SetActive(true);
+        }
+    }
+
+    public void StartGame() {
+        if (State != GameState.Title)
+            return;
+
+        State = GameState.Playing;
+
+        if (titlePanel != null)
+            titlePanel.SetActive(false);
+        if (scoreText != null)
+            scoreText.gameObject.SetActive(true);
+        if (shieldText != null)
+            shieldText.gameObject.SetActive(true);
     }
 
     void Update() {
+        if (State == GameState.Title) {
+            if (Input.GetKeyDown(KeyCode.Return)) 
+                StartGame();
+            return;
+        }
         if (IsPlaying) {
             bestHeight = Mathf.Max(bestHeight, player.transform.position.y - startY);
             heightScore = Mathf.RoundToInt(bestHeight * 10f);
@@ -89,7 +129,7 @@ public class GameManager : MonoBehaviour {
             gameOverTitleText.text = "GAME OVER!";
 
         if (gameOverScoreText != null)
-            gameOverScoreText.text = "Score: " + Score;
+            gameOverScoreText.text = "Score: " + Score + "\n\'R' to Restart";
 
         if (gameOverPanel != null)
             gameOverPanel.SetActive(true);
@@ -97,7 +137,8 @@ public class GameManager : MonoBehaviour {
         Debug.Log("GAME OVER. Score: " + Score);
     }
     
-    private void Restart() {
+    public void Restart() {
+        restartDirectly = true;
         SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex );
     }
 
@@ -112,7 +153,7 @@ public class GameManager : MonoBehaviour {
         if (winTitleText != null)
                 winTitleText.text = "YOU WIN!";
         if (winScoreText != null) 
-            winScoreText.text = "Score: " + Score;
+            winScoreText.text = "Score: " + Score + "\n\'R' to Restart";
         if (winPanel != null) 
             winPanel.SetActive(true);
 

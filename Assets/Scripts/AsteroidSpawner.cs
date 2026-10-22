@@ -19,6 +19,8 @@ public class AsteroidSpawner : MonoBehaviour {
     }
 
     void Update() {
+        if (GameManager.Instance != null && !GameManager.Instance.IsPlaying) 
+            return;
         if (asteroidPrefab == null || cam == null)
             return;
 
