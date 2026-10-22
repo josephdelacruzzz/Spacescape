@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6552910200883475199}
   m_Layer: 0
   m_Name: ShieldPickup
-  m_TagString: Goal
+  m_TagString: ShieldPickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

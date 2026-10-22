@@ -381,6 +381,8 @@ MonoBehaviour:
   startingMovingSpeed: 1.5
   endingMovingSpeed: 3.5
   movingPlatformRange: 2
+  springPrefab: {fileID: 2305886001383946052, guid: c5fe68e32f3c440ae80ebe5052513f3a, type: 3}
+  springChance: 0.12
 --- !u!1 &373862880
 GameObject:
   m_ObjectHideFlags: 0
@@ -1847,6 +1849,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  bounceMultiplier: 5
 --- !u!50 &1243216110
 Rigidbody2D:
   serializedVersion: 5

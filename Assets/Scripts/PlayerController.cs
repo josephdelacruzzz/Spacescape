@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
     private Camera cam;
     private bool isGrounded, wasGrounded;
     private bool hasBeenHit;
+    public float bounceMultiplier = 3f;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
@@ -36,9 +37,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void HandleJump() {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded) {
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded) 
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpSpeed);
-        }
+        
     }
 
     private void WrapAroundScreen() {
@@ -85,15 +86,24 @@ public class PlayerController : MonoBehaviour {
         Die();
     }
 
+    void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.contactCount == 0 || !collision.gameObject.CompareTag("Spring"))
+            return;
+        if (collision.GetContact(0).normal.y > 0.5f) {
+            float bounceSpeed = jumpSpeed * Mathf.Sqrt(bounceMultiplier);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceSpeed);
+        }
+    }
+
     private void Die() {
         if (hasBeenHit)
             return;
 
         hasBeenHit = true;
 
-        if (GameManager.Instance != null) {
+        if (GameManager.Instance != null)
             GameManager.Instance.GameOver();
-        }
+        
 
         gameObject.SetActive(false);
     }

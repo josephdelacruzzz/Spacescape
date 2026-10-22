@@ -25,6 +25,9 @@ public class Levels : MonoBehaviour {
     public float endingMovingSpeed = 3.5f;
     public float movingPlatformRange = 2f;
 
+    public GameObject springPrefab;
+    public float springChance = 0.12f;
+
     void Awake() {
         Build();
     }
@@ -47,10 +50,8 @@ public class Levels : MonoBehaviour {
             float t = i / (float)(platformCount - 1); 
             y += Mathf.Lerp(minGap, maxGap, t);
             float width = Mathf.Lerp(startWidth, endWidth, t);
-
             float limit = halfWidth - width / 2f;
             float x;
-
             bool crossScreenJump = prepareCrossScreen && i > 2;
 
             if (crossScreenJump){
@@ -67,19 +68,14 @@ public class Levels : MonoBehaviour {
                 bool startCrossScreenRoute = i > 2 && !prepareCrossScreen && crossScreenCooldownRemaining <= 0 && Random.value < crossScreenChance;
 
                 if (startCrossScreenRoute) {
-                    float edge = Random.value < 0.5f
-                        ? -limit
-                        : limit;
-
+                    float edge = Random.value < 0.5f ? -limit : limit;
                     x = Mathf.Clamp(edge, prevX - horizontalStep, prevX + horizontalStep);
-
                     x = Mathf.Clamp(x, -limit, limit);
                     prepareCrossScreen = true;
                 } else {
                     x = Random.Range(-limit, limit);
                     x = Mathf.Clamp(x, prevX - horizontalStep, prevX + horizontalStep);
                     x = Mathf.Clamp(x, -limit, limit);
-
                     if (crossScreenCooldownRemaining > 0)
                         crossScreenCooldownRemaining--;
                 }
@@ -104,6 +100,10 @@ public class Levels : MonoBehaviour {
 
             if (ShieldPickup != null && !isMoving && i > 0 && i % pickupEveryNPlatforms == 0) {
                 Instantiate(ShieldPickup, new Vector3(x, y + 0.8f, 0f), Quaternion.identity, parent);
+            }
+
+            if (springPrefab != null && !isMoving && i > 2 && Random.value < springChance) {
+                Instantiate(springPrefab, new Vector3(x, y + 0.2f, 0f), Quaternion.identity, parent);
             }
         }
 
