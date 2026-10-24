@@ -84,7 +84,7 @@ public class Shield : MonoBehaviour {
             shieldText.text = "Shield: " + Mathf.CeilToInt(timeLeft) + "s";
         }
         else if (shieldReady) {
-            shieldText.text = "Shield: Ready (E)";
+            shieldText.text = "Shield: (E)";
         }
         else {
             shieldText.text = "Shield: --";

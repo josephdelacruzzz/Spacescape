@@ -14,9 +14,16 @@ public class PlayerController : MonoBehaviour {
     private bool hasBeenHit; //prevents multiple death or win evens
     public float bounceMultiplier = 3f;
 
+    private Animator animator;
+    private SpriteRenderer bodyRenderer;
+    private static readonly int SpeedHash = Animator.StringToHash("Speed");
+    private static readonly int GroundedHash = Animator.StringToHash("Grounded");
+
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
         cam = Camera.main;
+        animator = GetComponent<Animator>();
+        bodyRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update() {
@@ -24,6 +31,12 @@ public class PlayerController : MonoBehaviour {
         if (GameManager.Instance != null && !GameManager.Instance.IsPlaying) 
             return;
         float h = Input.GetAxisRaw("Horizontal"); //A or D for left right input
+
+        if (animator != null)
+            animator.SetFloat(SpeedHash, Mathf.Abs(h));
+        if (bodyRenderer != null && h != 0f)
+            bodyRenderer.flipX = h < 0f;
+
         rb.linearVelocity = new Vector2(h * moveSpeed, rb.linearVelocity.y);
         CheckGround(); //check if player on platform
         HandleJump(); //single jump
@@ -36,6 +49,8 @@ public class PlayerController : MonoBehaviour {
         //player is grounded when check circle overlaps fround layer obj and player is not moving up
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer)
                      && rb.linearVelocity.y <= 0.1f;
+        if (animator != null)
+            animator.SetBool(GroundedHash, isGrounded);
     }
 
     private void HandleJump() {

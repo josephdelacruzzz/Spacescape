@@ -67,7 +67,7 @@ public class OneShot : MonoBehaviour {
             oneShotText.text = "OneShot: " + Mathf.CeilToInt(timeLeft) + "s";
         }
         else if (oneShotReady) {
-            oneShotText.text = "OneShot: Ready (F)";
+            oneShotText.text = "OneShot: (F)";
         }
         else {
             oneShotText.text = "OneShot: --";

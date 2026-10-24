@@ -7,7 +7,7 @@ public class Asteroid : MonoBehaviour {
     private int asteroidHealth = 1;
     private Rigidbody2D rb;
     private Camera cam;
-    //public float sizeMultiplier = 2.5f;
+    public float rotationSpeed = 90f;
 
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
@@ -19,8 +19,8 @@ public class Asteroid : MonoBehaviour {
         size = sizeLevel;
         asteroidHealth = sizeLevel;
         transform.localScale = Vector3.one * (0.5f + 0.4f * sizeLevel);
-        //transform.localScale = Vector3.one * (0.5f + 0.4f * sizeLevel) * sizeMultiplier; 
         rb.linearVelocity = new Vector2(0f, -fallSpeed);
+        rb.angularVelocity = Random.value < 0.5f ? rotationSpeed : -rotationSpeed;
     }
 
     //projectile hits asteroid
