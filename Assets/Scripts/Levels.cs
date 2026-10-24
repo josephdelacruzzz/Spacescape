@@ -97,7 +97,10 @@ public class Levels : MonoBehaviour {
 
             //creates and resizes platform
             GameObject p = Instantiate(platform, new Vector3(x, y, 0f), Quaternion.identity, parent);
-            p.transform.localScale = new Vector3(width, 0.4f, 1f);
+            p.transform.localScale = new Vector3(width, width, 1f);
+            BoxCollider2D platformCollider = p.GetComponent<BoxCollider2D>();
+            if (platformCollider != null)
+                platformCollider.size = new Vector2(0.6f, 0.4f / width);
             bool isMoving = i > 3 && Random.value < movingPlatformChance; //some platforms begin moving
             if (isMoving){
                 MovingLevels movingScript = p.GetComponent<MovingLevels>();
@@ -114,7 +117,7 @@ public class Levels : MonoBehaviour {
             if (ShieldPickup != null && !isMoving && i > 0 && Random.value < shieldChance) {
                 Instantiate(ShieldPickup, new Vector3(x, y + 0.8f, 0f), Quaternion.identity, parent);
             } else if (springPrefab != null && !isMoving && i > 2 && Random.value < springChance) {
-                Instantiate( springPrefab, new Vector3(x, y + 0.2f, 0f), Quaternion.identity, parent);
+                Instantiate( springPrefab, new Vector3(x, y + 0.3f, 0f), Quaternion.identity, parent);
             } else if (OneShotPickup != null && !isMoving && i > 2 && Random.value < oneShotChance){ 
                 Instantiate( OneShotPickup, new Vector3(x, y + 0.8f, 0f), Quaternion.identity, parent);
             }

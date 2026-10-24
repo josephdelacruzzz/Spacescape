@@ -1,0 +1,2389 @@
+fileFormatVersion: 2
+guid: 2210b5f7619134490b023b97e1a37409
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1741453296782900556
+    second: planet1 - 22-10-2026 16-27-50_0
+  - first:
+      213: -1076437807140596504
+    second: planet1 - 22-10-2026 16-27-50_1
+  - first:
+      213: -629861171270777879
+    second: planet1 - 22-10-2026 16-27-50_2
+  - first:
+      213: -7357090287067844956
+    second: planet1 - 22-10-2026 16-27-50_3
+  - first:
+      213: -1854812494340300096
+    second: planet1 - 22-10-2026 16-27-50_4
+  - first:
+      213: 7208300316403347253
+    second: planet1 - 22-10-2026 16-27-50_5
+  - first:
+      213: -514958190494953073
+    second: planet1 - 22-10-2026 16-27-50_6
+  - first:
+      213: 434455762083362716
+    second: planet1 - 22-10-2026 16-27-50_7
+  - first:
+      213: 8003751812209311522
+    second: planet1 - 22-10-2026 16-27-50_8
+  - first:
+      213: -8371677275434799772
+    second: planet1 - 22-10-2026 16-27-50_9
+  - first:
+      213: 5705542880707703636
+    second: planet1 - 22-10-2026 16-27-50_10
+  - first:
+      213: 1927514995789216614
+    second: planet1 - 22-10-2026 16-27-50_11
+  - first:
+      213: 642607626012686370
+    second: planet1 - 22-10-2026 16-27-50_12
+  - first:
+      213: -8455795422723344088
+    second: planet1 - 22-10-2026 16-27-50_13
+  - first:
+      213: -4157114192965172818
+    second: planet1 - 22-10-2026 16-27-50_14
+  - first:
+      213: -940889835958464037
+    second: planet1 - 22-10-2026 16-27-50_15
+  - first:
+      213: 1640386384858057423
+    second: planet1 - 22-10-2026 16-27-50_16
+  - first:
+      213: 1513309486554201060
+    second: planet1 - 22-10-2026 16-27-50_17
+  - first:
+      213: 44871752868151074
+    second: planet1 - 22-10-2026 16-27-50_18
+  - first:
+      213: 6684155576192608546
+    second: planet1 - 22-10-2026 16-27-50_19
+  - first:
+      213: 5715754512872824467
+    second: planet1 - 22-10-2026 16-27-50_20
+  - first:
+      213: 3798403107028952539
+    second: planet1 - 22-10-2026 16-27-50_21
+  - first:
+      213: 4464635981488372787
+    second: planet1 - 22-10-2026 16-27-50_22
+  - first:
+      213: -1725005883063218149
+    second: planet1 - 22-10-2026 16-27-50_23
+  - first:
+      213: -4088946023475064624
+    second: planet1 - 22-10-2026 16-27-50_24
+  - first:
+      213: -9106050362100026872
+    second: planet1 - 22-10-2026 16-27-50_25
+  - first:
+      213: 6988859972397328489
+    second: planet1 - 22-10-2026 16-27-50_26
+  - first:
+      213: 5147163040551791705
+    second: planet1 - 22-10-2026 16-27-50_27
+  - first:
+      213: 6907548822052902948
+    second: planet1 - 22-10-2026 16-27-50_28
+  - first:
+      213: 6928933963537645991
+    second: planet1 - 22-10-2026 16-27-50_29
+  - first:
+      213: -758835279224273157
+    second: planet1 - 22-10-2026 16-27-50_30
+  - first:
+      213: 7726914197586218326
+    second: planet1 - 22-10-2026 16-27-50_31
+  - first:
+      213: 5943461911629923232
+    second: planet1 - 22-10-2026 16-27-50_32
+  - first:
+      213: 8573445256131336158
+    second: planet1 - 22-10-2026 16-27-50_33
+  - first:
+      213: -5359045450129637466
+    second: planet1 - 22-10-2026 16-27-50_34
+  - first:
+      213: -6577662980221281543
+    second: planet1 - 22-10-2026 16-27-50_35
+  - first:
+      213: -6191811590542415086
+    second: planet1 - 22-10-2026 16-27-50_36
+  - first:
+      213: 8553329812756297968
+    second: planet1 - 22-10-2026 16-27-50_37
+  - first:
+      213: -2538799284949082719
+    second: planet1 - 22-10-2026 16-27-50_38
+  - first:
+      213: -3853139125661148690
+    second: planet1 - 22-10-2026 16-27-50_39
+  - first:
+      213: -4528395907440570083
+    second: planet1 - 22-10-2026 16-27-50_40
+  - first:
+      213: -253279625990385187
+    second: planet1 - 22-10-2026 16-27-50_41
+  - first:
+      213: 2243086227858512538
+    second: planet1 - 22-10-2026 16-27-50_42
+  - first:
+      213: -2898803756965786114
+    second: planet1 - 22-10-2026 16-27-50_43
+  - first:
+      213: 1052224966476273850
+    second: planet1 - 22-10-2026 16-27-50_44
+  - first:
+      213: 6576658227352025657
+    second: planet1 - 22-10-2026 16-27-50_45
+  - first:
+      213: 259620687023580445
+    second: planet1 - 22-10-2026 16-27-50_46
+  - first:
+      213: 856833135019995908
+    second: planet1 - 22-10-2026 16-27-50_47
+  - first:
+      213: 3020726199397681894
+    second: planet1 - 22-10-2026 16-27-50_48
+  - first:
+      213: 958056433415400436
+    second: planet1 - 22-10-2026 16-27-50_49
+  - first:
+      213: -3220534090094646248
+    second: planet1 - 22-10-2026 16-27-50_50
+  - first:
+      213: -2527777855292003035
+    second: planet1 - 22-10-2026 16-27-50_51
+  - first:
+      213: -2647841217476668535
+    second: planet1 - 22-10-2026 16-27-50_52
+  - first:
+      213: 1010871586757102838
+    second: planet1 - 22-10-2026 16-27-50_53
+  - first:
+      213: -4827031700238709893
+    second: planet1 - 22-10-2026 16-27-50_54
+  - first:
+      213: -2463293299688819535
+    second: planet1 - 22-10-2026 16-27-50_55
+  - first:
+      213: 5570126223727930359
+    second: planet1 - 22-10-2026 16-27-50_56
+  - first:
+      213: 1393735507603089703
+    second: planet1 - 22-10-2026 16-27-50_57
+  - first:
+      213: 5586654289739666224
+    second: planet1 - 22-10-2026 16-27-50_58
+  - first:
+      213: 5357894273800979350
+    second: planet1 - 22-10-2026 16-27-50_59
+  - first:
+      213: -3905180765556427932
+    second: planet1 - 22-10-2026 16-27-50_60
+  - first:
+      213: -7689370111102304641
+    second: planet1 - 22-10-2026 16-27-50_61
+  - first:
+      213: -4944164970485108760
+    second: planet1 - 22-10-2026 16-27-50_62
+  - first:
+      213: -8408853021743530787
+    second: planet1 - 22-10-2026 16-27-50_63
+  - first:
+      213: 305230692175887626
+    second: planet1 - 22-10-2026 16-27-50_64
+  - first:
+      213: 4837600018734185158
+    second: planet1 - 22-10-2026 16-27-50_65
+  - first:
+      213: -4650353395474862246
+    second: planet1 - 22-10-2026 16-27-50_66
+  - first:
+      213: 4329601201819672290
+    second: planet1 - 22-10-2026 16-27-50_67
+  - first:
+      213: 5490590999288044362
+    second: planet1 - 22-10-2026 16-27-50_68
+  - first:
+      213: -3732366760783439138
+    second: planet1 - 22-10-2026 16-27-50_69
+  - first:
+      213: 8138940649061856867
+    second: planet1 - 22-10-2026 16-27-50_70
+  - first:
+      213: 6118280268332078205
+    second: planet1 - 22-10-2026 16-27-50_71
+  - first:
+      213: -8014262072730030180
+    second: planet1 - 22-10-2026 16-27-50_72
+  - first:
+      213: -6549365852723083830
+    second: planet1 - 22-10-2026 16-27-50_73
+  - first:
+      213: -2521095706734301717
+    second: planet1 - 22-10-2026 16-27-50_74
+  - first:
+      213: -5733669085593056882
+    second: planet1 - 22-10-2026 16-27-50_75
+  - first:
+      213: 9182303772128402704
+    second: planet1 - 22-10-2026 16-27-50_76
+  - first:
+      213: -3579836011305739092
+    second: planet1 - 22-10-2026 16-27-50_77
+  - first:
+      213: 5644612926045145638
+    second: planet1 - 22-10-2026 16-27-50_78
+  - first:
+      213: -3539910300642098212
+    second: planet1 - 22-10-2026 16-27-50_79
+  - first:
+      213: -6134010988521952723
+    second: planet1 - 22-10-2026 16-27-50_80
+  - first:
+      213: -8906882074579097232
+    second: planet1 - 22-10-2026 16-27-50_81
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 32
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 141
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b28254047d15d7e0800000000000000
+      internalID: -1741453296782900556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 630
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e495928489bf01f0800000000000000
+      internalID: -1076437807140596504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 630
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e308941a984247f0800000000000000
+      internalID: -629861171270777879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 630
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae28da0d5d56e990800000000000000
+      internalID: -7357090287067844956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_4
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 630
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2e3e51dd16246e0800000000000000
+      internalID: -1854812494340300096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_5
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 579
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fae8152f6090460800000000000000
+      internalID: 7208300316403347253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: asteroid
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 589
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f81de5d01408ad8f0800000000000000
+      internalID: -514958190494953073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 622
+        width: 46
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97b999b63f770600800000000000000
+      internalID: 434455762083362716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_8
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 591
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22fff151ed9031f60800000000000000
+      internalID: 8003751812209311522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_9
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 602
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46daf7f7fd3d1db80800000000000000
+      internalID: -8371677275434799772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_10
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 602
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453775f45092e2f40800000000000000
+      internalID: 5705542880707703636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_11
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 596
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b314f1da8efba10800000000000000
+      internalID: 1927514995789216614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectile
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 589
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228717e2b300be800800000000000000
+      internalID: 642607626012686370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_13
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 588
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829733f1ddaf6aa80800000000000000
+      internalID: -8455795422723344088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_14
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 574
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea18395baa6fe46c0800000000000000
+      internalID: -4157114192965172818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_15
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 574
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd19be2eda941f2f0800000000000000
+      internalID: -940889835958464037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_16
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 574
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca0ad3d9b2d3c610800000000000000
+      internalID: 1640386384858057423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_17
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 515
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ebba4dc5fa500510800000000000000
+      internalID: 1513309486554201060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_18
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 530
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22fb72a1f9a6f9000800000000000000
+      internalID: 44871752868151074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_19
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 549
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22928661514e2cc50800000000000000
+      internalID: 6684155576192608546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldpickup
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 549
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ede133270725f40800000000000000
+      internalID: 5715754512872824467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_21
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 548
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd563344083a6b430800000000000000
+      internalID: 3798403107028952539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_22
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 549
+        width: 27
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33cba0045c295fd30800000000000000
+      internalID: 4464635981488372787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_23
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 549
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b10de80f94c8f08e0800000000000000
+      internalID: -1725005883063218149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_24
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 524
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0d50d71452147c0800000000000000
+      internalID: -4088946023475064624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_25
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 527
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 802f53c017fc0a180800000000000000
+      internalID: -9106050362100026872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_26
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 532
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96860b7cd1b6df060800000000000000
+      internalID: 6988859972397328489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_27
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 530
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ceb19b3856e6740800000000000000
+      internalID: 5147163040551791705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 533
+        width: 31
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428912f4e0b8cdf50800000000000000
+      internalID: 6907548822052902948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 532
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a10dc09ab4882060800000000000000
+      internalID: 6928933963537645991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectil
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 532
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf68dc285531875f0800000000000000
+      internalID: -758835279224273157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_31
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 490
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d8c0516838b3b60800000000000000
+      internalID: 7726914197586218326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_32
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 486
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a304ca6e1b6b7250800000000000000
+      internalID: 5943461911629923232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_33
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 482
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed757f0590ffaf670800000000000000
+      internalID: 8573445256131336158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_34
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 482
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af79d97e88d0a5b0800000000000000
+      internalID: -5359045450129637466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_35
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 481
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa5ca39e5277b4a0800000000000000
+      internalID: -6577662980221281543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_36
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 504
+        width: 59
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ba29df924421aa0800000000000000
+      internalID: -6191811590542415086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 495
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f8f810b52883b670800000000000000
+      internalID: 8553329812756297968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_38
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 494
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad1890608f54ccd0800000000000000
+      internalID: -2538799284949082719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_39
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 505
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee9dec84166e68ac0800000000000000
+      internalID: -3853139125661148690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_40
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 498
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d111ca62ae7e721c0800000000000000
+      internalID: -4528395907440570083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_41
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 482
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1dff7a58b2c7cf0800000000000000
+      internalID: -253279625990385187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_42
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 507
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ad3143a0b012f10800000000000000
+      internalID: 2243086227858512538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_43
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 481
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd8c70775165c7d0800000000000000
+      internalID: -2898803756965786114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_44
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 487
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab89d9638014a9e00800000000000000
+      internalID: 1052224966476273850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_45
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 486
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ab77a20dbf44b50800000000000000
+      internalID: 6576658227352025657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_46
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 259
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15226aa3ab5a9300800000000000000
+      internalID: 259620687023580445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_47
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 480
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403b6a4523514eb00800000000000000
+      internalID: 856833135019995908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_48
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 436
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea80de4976cbe920800000000000000
+      internalID: 3020726199397681894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_49
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 444
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fba08c0043bb4d00800000000000000
+      internalID: 958056433415400436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_50
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 440
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c6fd4ee4d5e43d0800000000000000
+      internalID: -3220534090094646248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_51
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 444
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52da830fe678becd0800000000000000
+      internalID: -2527777855292003035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_52
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 429
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9835aaa017af04bd0800000000000000
+      internalID: -2647841217476668535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_53
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 424
+        width: 19
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc41323a56570e00800000000000000
+      internalID: 1010871586757102838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_54
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 412
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7bc8bb4e30f20db0800000000000000
+      internalID: -4827031700238709893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_55
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 409
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4b2768bcf90ddd0800000000000000
+      internalID: -2463293299688819535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 418
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb2467e9401d4d40800000000000000
+      internalID: 5570126223727930359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_57
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 416
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729e7815f0b875310800000000000000
+      internalID: 1393735507603089703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_58
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 389
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03358d62a78c78d40800000000000000
+      internalID: 5586654289739666224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_59
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 377
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 693c10664701b5a40800000000000000
+      internalID: 5357894273800979350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_60
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 379
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4633255c8c20ec9c0800000000000000
+      internalID: -3905180765556427932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_61
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 362
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7ebd3dbf9ed94590800000000000000
+      internalID: -7689370111102304641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_62
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 359
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef2e47972cc26bb0800000000000000
+      internalID: -4944164970485108760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_63
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 344
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddcb18e8ab0cd4b80800000000000000
+      internalID: -8408853021743530787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_64
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 235
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0db0b582b56c3400800000000000000
+      internalID: 305230692175887626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_65
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 233
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6caf21a169b922340800000000000000
+      internalID: 4837600018734185158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_66
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 256
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f60b6b930a67fb0800000000000000
+      internalID: -4650353395474862246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_67
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 259
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eed0959a55d51c30800000000000000
+      internalID: 4329601201819672290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: oneshotpickup
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 256
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b55876c6f723c40800000000000000
+      internalID: 5490590999288044362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_69
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 259
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda170cb438f33cc0800000000000000
+      internalID: -3732366760783439138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_70
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 259
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 366b15bf56353f070800000000000000
+      internalID: 8138940649061856867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_71
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 209
+        width: 223
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d74173eec7f78e450800000000000000
+      internalID: 6118280268332078205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_72
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f6a023b1f97c090800000000000000
+      internalID: -8014262072730030180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 243
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac50e5cf47afb15a0800000000000000
+      internalID: -6549365852723083830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_74
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 243
+        width: 106
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bede653efc4430dd0800000000000000
+      internalID: -2521095706734301717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_75
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 227
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89469d485aed60b0800000000000000
+      internalID: -5733669085593056882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_76
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 227
+        width: 106
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d517d71a81e6f70800000000000000
+      internalID: 9182303772128402704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_77
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 187
+        width: 62
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac58ff4d1ed15ec0800000000000000
+      internalID: -3579836011305739092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_78
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 185
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62acf7fbc81b55e40800000000000000
+      internalID: 5644612926045145638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_79
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 211
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd34b793656bfdec0800000000000000
+      internalID: -3539910300642098212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_80
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 211
+        width: 106
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a6ecc518d9fdaa0800000000000000
+      internalID: -6134010988521952723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_81
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0792b60a1f5646480800000000000000
+      internalID: -8906882074579097232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_82
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 484
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644b65cf5ef6d4f2ea89cb5234c4bab6
+      internalID: 940943502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_83
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 483
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e6aaba81992e430986a7cd2ba885e5c
+      internalID: -1006730825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_84
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 480
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40db2d234ac34f249ac9ff3734accfd
+      internalID: -315593357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_85
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 481
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f6703070618475fbc1c5eb3032a3d9
+      internalID: -2136141696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1 - 22-10-2026 16-27-50_86
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 432
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcceeca8d74a24963aa5e67dfda44bdc
+      internalID: 2140967114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: planet1
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 375
+        width: 126
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae117578a2fa042e1ac0989bc61eec6b
+      internalID: 1431863065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d851735caf48b4df3bfd82cb15344211
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":1,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      asteroid: -514958190494953073
+      oneshotpickup: 5490590999288044362
+      planet1: 1431863065
+      planet1 - 22-10-2026 16-27-50_0: -1741453296782900556
+      planet1 - 22-10-2026 16-27-50_1: -1076437807140596504
+      planet1 - 22-10-2026 16-27-50_10: 5705542880707703636
+      planet1 - 22-10-2026 16-27-50_11: 1927514995789216614
+      planet1 - 22-10-2026 16-27-50_13: -8455795422723344088
+      planet1 - 22-10-2026 16-27-50_14: -4157114192965172818
+      planet1 - 22-10-2026 16-27-50_15: -940889835958464037
+      planet1 - 22-10-2026 16-27-50_16: 1640386384858057423
+      planet1 - 22-10-2026 16-27-50_17: 1513309486554201060
+      planet1 - 22-10-2026 16-27-50_18: 44871752868151074
+      planet1 - 22-10-2026 16-27-50_19: 6684155576192608546
+      planet1 - 22-10-2026 16-27-50_2: -629861171270777879
+      planet1 - 22-10-2026 16-27-50_21: 3798403107028952539
+      planet1 - 22-10-2026 16-27-50_22: 4464635981488372787
+      planet1 - 22-10-2026 16-27-50_23: -1725005883063218149
+      planet1 - 22-10-2026 16-27-50_24: -4088946023475064624
+      planet1 - 22-10-2026 16-27-50_25: -9106050362100026872
+      planet1 - 22-10-2026 16-27-50_26: 6988859972397328489
+      planet1 - 22-10-2026 16-27-50_27: 5147163040551791705
+      planet1 - 22-10-2026 16-27-50_28: 6907548822052902948
+      planet1 - 22-10-2026 16-27-50_29: 6928933963537645991
+      planet1 - 22-10-2026 16-27-50_3: -7357090287067844956
+      planet1 - 22-10-2026 16-27-50_31: 7726914197586218326
+      planet1 - 22-10-2026 16-27-50_32: 5943461911629923232
+      planet1 - 22-10-2026 16-27-50_33: 8573445256131336158
+      planet1 - 22-10-2026 16-27-50_34: -5359045450129637466
+      planet1 - 22-10-2026 16-27-50_35: -6577662980221281543
+      planet1 - 22-10-2026 16-27-50_36: -6191811590542415086
+      planet1 - 22-10-2026 16-27-50_37: 8553329812756297968
+      planet1 - 22-10-2026 16-27-50_38: -2538799284949082719
+      planet1 - 22-10-2026 16-27-50_39: -3853139125661148690
+      planet1 - 22-10-2026 16-27-50_4: -1854812494340300096
+      planet1 - 22-10-2026 16-27-50_40: -4528395907440570083
+      planet1 - 22-10-2026 16-27-50_41: -253279625990385187
+      planet1 - 22-10-2026 16-27-50_42: 2243086227858512538
+      planet1 - 22-10-2026 16-27-50_43: -2898803756965786114
+      planet1 - 22-10-2026 16-27-50_44: 1052224966476273850
+      planet1 - 22-10-2026 16-27-50_45: 6576658227352025657
+      planet1 - 22-10-2026 16-27-50_46: 259620687023580445
+      planet1 - 22-10-2026 16-27-50_47: 856833135019995908
+      planet1 - 22-10-2026 16-27-50_48: 3020726199397681894
+      planet1 - 22-10-2026 16-27-50_49: 958056433415400436
+      planet1 - 22-10-2026 16-27-50_5: 7208300316403347253
+      planet1 - 22-10-2026 16-27-50_50: -3220534090094646248
+      planet1 - 22-10-2026 16-27-50_51: -2527777855292003035
+      planet1 - 22-10-2026 16-27-50_52: -2647841217476668535
+      planet1 - 22-10-2026 16-27-50_53: 1010871586757102838
+      planet1 - 22-10-2026 16-27-50_54: -4827031700238709893
+      planet1 - 22-10-2026 16-27-50_55: -2463293299688819535
+      planet1 - 22-10-2026 16-27-50_56: 5570126223727930359
+      planet1 - 22-10-2026 16-27-50_57: 1393735507603089703
+      planet1 - 22-10-2026 16-27-50_58: 5586654289739666224
+      planet1 - 22-10-2026 16-27-50_59: 5357894273800979350
+      planet1 - 22-10-2026 16-27-50_60: -3905180765556427932
+      planet1 - 22-10-2026 16-27-50_61: -7689370111102304641
+      planet1 - 22-10-2026 16-27-50_62: -4944164970485108760
+      planet1 - 22-10-2026 16-27-50_63: -8408853021743530787
+      planet1 - 22-10-2026 16-27-50_64: 305230692175887626
+      planet1 - 22-10-2026 16-27-50_65: 4837600018734185158
+      planet1 - 22-10-2026 16-27-50_66: -4650353395474862246
+      planet1 - 22-10-2026 16-27-50_67: 4329601201819672290
+      planet1 - 22-10-2026 16-27-50_69: -3732366760783439138
+      planet1 - 22-10-2026 16-27-50_7: 434455762083362716
+      planet1 - 22-10-2026 16-27-50_70: 8138940649061856867
+      planet1 - 22-10-2026 16-27-50_71: 6118280268332078205
+      planet1 - 22-10-2026 16-27-50_72: -8014262072730030180
+      planet1 - 22-10-2026 16-27-50_73: -6549365852723083830
+      planet1 - 22-10-2026 16-27-50_74: -2521095706734301717
+      planet1 - 22-10-2026 16-27-50_75: -5733669085593056882
+      planet1 - 22-10-2026 16-27-50_76: 9182303772128402704
+      planet1 - 22-10-2026 16-27-50_77: -3579836011305739092
+      planet1 - 22-10-2026 16-27-50_78: 5644612926045145638
+      planet1 - 22-10-2026 16-27-50_79: -3539910300642098212
+      planet1 - 22-10-2026 16-27-50_8: 8003751812209311522
+      planet1 - 22-10-2026 16-27-50_80: -6134010988521952723
+      planet1 - 22-10-2026 16-27-50_81: -8906882074579097232
+      planet1 - 22-10-2026 16-27-50_82: 940943502
+      planet1 - 22-10-2026 16-27-50_83: -1006730825
+      planet1 - 22-10-2026 16-27-50_84: -315593357
+      planet1 - 22-10-2026 16-27-50_85: -2136141696
+      planet1 - 22-10-2026 16-27-50_86: 2140967114
+      planet1 - 22-10-2026 16-27-50_9: -8371677275434799772
+      projectil: -758835279224273157
+      projectile: 642607626012686370
+      shieldpickup: 5715754512872824467
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
