@@ -83,6 +83,8 @@ public class GameManager : MonoBehaviour {
     public void StartGame() {
         if (State != GameState.Title)
             return;
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.Play(AudioManager.Instance.startSound);
 
         State = GameState.Playing;
 
@@ -162,6 +164,8 @@ public class GameManager : MonoBehaviour {
         if (!IsPlaying)
             return;
         State = GameState.GameOver;
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.Play(AudioManager.Instance.gameOverSound);
 
         //updates UI correctly
         HideGameplayUI();
@@ -188,6 +192,8 @@ public class GameManager : MonoBehaviour {
         if (!IsPlaying) 
             return;
         timeBonus = Mathf.CeilToInt(timeRemaining);
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.Play(AudioManager.Instance.winSound);
 
         //updates UI correctly
         State = GameState.Won;

@@ -36,6 +36,8 @@ public class OneShot : MonoBehaviour {
         if (!other.CompareTag("OneShotPickup")) //only accepts oneshot pickups
             return;
         oneShotReady = true;
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.Play(AudioManager.Instance.oneShotPickupSound);
         Destroy(other.gameObject);
         UpdateUI();
 
@@ -47,6 +49,8 @@ public class OneShot : MonoBehaviour {
         oneShotReady = false;
         isActive = true;
         timeLeft = oneShotDuration;
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.Play(AudioManager.Instance.oneShotActivateSound);
         UpdateUI();
         Debug.Log("OneShot activated.");
     }

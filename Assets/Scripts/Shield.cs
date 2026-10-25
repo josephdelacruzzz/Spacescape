@@ -40,6 +40,8 @@ public class Shield : MonoBehaviour {
         if (!other.CompareTag("ShieldPickup"))//only accepts shield pickups
             return;
         shieldReady = true;
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.Play(AudioManager.Instance.shieldPickupSound);
         Destroy(other.gameObject);
         UpdateUI();
 
@@ -51,6 +53,8 @@ public class Shield : MonoBehaviour {
         shieldReady = false;
         isActive = true;
         timeLeft = shieldDuration;
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.Play(AudioManager.Instance.shieldActivateSound);
         if (shieldEffect != null)
             shieldEffect.SetActive(true);
         UpdateUI();
@@ -71,6 +75,8 @@ public class Shield : MonoBehaviour {
     public void OnShieldHit() {
         if (!isActive)
             return;
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.Play(AudioManager.Instance.shieldBlockSound);
         //protects player from asteroid
         Debug.Log("Shield blocked asteroid.");
     }

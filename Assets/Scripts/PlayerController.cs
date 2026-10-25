@@ -55,8 +55,11 @@ public class PlayerController : MonoBehaviour {
 
     private void HandleJump() {
         //jump performed when Space pressed and on ground
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded) 
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded) {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpSpeed);
+            if (AudioManager.Instance != null)
+                AudioManager.Instance.Play(AudioManager.Instance.jumpSound);
+        }
     }
 
     private void WrapAroundScreen() {
@@ -101,6 +104,8 @@ public class PlayerController : MonoBehaviour {
 
         //asteroid kills player if shield inactive
         Destroy(asteroid.gameObject);
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.Play(AudioManager.Instance.playerHitSound);
         Die(); 
     }
 
@@ -111,6 +116,8 @@ public class PlayerController : MonoBehaviour {
         if (collision.GetContact(0).normal.y > 0.5f) { //bounces when landing on top of spring
             float bounceSpeed = jumpSpeed * Mathf.Sqrt(bounceMultiplier);
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceSpeed);
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.Play(AudioManager.Instance.springSound);
         }
     }
 

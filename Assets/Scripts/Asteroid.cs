@@ -35,6 +35,8 @@ public class Asteroid : MonoBehaviour {
     public void Break() {
         if (GameManager.Instance != null)
             GameManager.Instance.AddKillScore(pointsPerSize * size );
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.Play(AudioManager.Instance.asteroidDestroySound);
 
         Destroy(gameObject);
     }

@@ -75,8 +75,9 @@ public class Shooting : MonoBehaviour {
         if (oneShot != null && oneShot.isActive)
             projectile.damage = 999;
         //launches projectile in dir of mouse
-        if (projectile != null)
-            projectile.Launch(direction);
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.Play(AudioManager.Instance.shootSound);
+        projectile.Launch(direction);
     }
 
 }
