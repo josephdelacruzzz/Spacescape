@@ -345,6 +345,8 @@ MonoBehaviour:
   gameOverScoreText: {fileID: 881983368}
   gameOverTitleText: {fileID: 2099999646}
   titlePanel: {fileID: 1582977576}
+  winHighScoreText: {fileID: 0}
+  gameOverHighScoreText: {fileID: 0}
   startingTime: 999
   timerSpeed: 1
 --- !u!4 &112738905
@@ -458,7 +460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Levels
   platform: {fileID: 34422150841934901, guid: 5e5a1d56ba06e4a978ba6ff656b4ecf2, type: 3}
   mothership: {fileID: 1218725135}
-  platformCount: 25
+  platformCount: 50
   firstGroundY: -5
   minGap: 2.1
   maxGap: 2.3
@@ -468,11 +470,11 @@ MonoBehaviour:
   ShieldPickup: {fileID: 9030453415698754149, guid: f1cc5551048b44b46b34b3047bf5ece2, type: 3}
   shieldChance: 0.1
   OneShotPickup: {fileID: 6957232871978524567, guid: a34fdfffc3e60400692ebd54c96d09ea, type: 3}
-  oneShotChance: 0.08
+  oneShotChance: 0.1
   crossScreenChance: 0.3
   edgeBand: 1.8
   crossScreenCooldown: 3
-  movingPlatformChance: 0.35
+  movingPlatformChance: 0.3
   movingPlatformSpeed: 1.5
   startingMovingSpeed: 1.5
   endingMovingSpeed: 3

@@ -1,8 +1,9 @@
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour {
-    public static AudioManager Instance { get; private set; }
+    public static AudioManager Instance { get; private set; } //access AudioManager
 
+    //audio clips in the game
     public AudioClip jumpSound;
     public AudioClip springSound;
     public AudioClip shootSound;
@@ -24,13 +25,8 @@ public class AudioManager : MonoBehaviour {
         audioSource = GetComponent<AudioSource>();
     }
 
-public void Play(AudioClip clip) {
-    if (clip == null) {
-        Debug.LogWarning("No audio clip assigned.");
-        return;
+    public void Play(AudioClip clip) {
+        Debug.Log("Playing sound: " + clip.name);
+        audioSource.PlayOneShot(clip); //plays sound effect
     }
-
-    Debug.Log("Playing sound: " + clip.name);
-    audioSource.PlayOneShot(clip);
-}
 }

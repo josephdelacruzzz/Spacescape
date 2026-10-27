@@ -18,9 +18,12 @@ public class Asteroid : MonoBehaviour {
     public void Init(int sizeLevel, float fallSpeed) {
         size = sizeLevel;
         asteroidHealth = sizeLevel;
-        transform.localScale = Vector3.one * (0.5f + 0.4f * sizeLevel);
-        rb.linearVelocity = new Vector2(0f, -fallSpeed);
-        rb.angularVelocity = Random.value < 0.5f ? rotationSpeed : -rotationSpeed;
+        transform.localScale = Vector3.one * (0.5f + 0.4f * sizeLevel); //transform size
+        rb.linearVelocity = new Vector2(0f, -fallSpeed); //speed of fall
+        if (Random.value < 0.5f) 
+            rb.angularVelocity = rotationSpeed;
+        else   
+            rb.angularVelocity = -rotationSpeed;
     }
 
     //projectile hits asteroid

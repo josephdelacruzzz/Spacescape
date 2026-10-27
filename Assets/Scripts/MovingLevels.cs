@@ -3,7 +3,7 @@ using UnityEngine;
 public class MovingLevels : MonoBehaviour{
     private bool isMoving;
     private float moveSpeed;
-    //left and rigth movement boundaries
+    //left and right movement boundaries
     private float leftLimit;
     private float rightLimit;
     private int direction = 1; //movement direction (1=right,-1=left)
@@ -39,12 +39,8 @@ public class MovingLevels : MonoBehaviour{
         //stop movement if a panel is active
         if (GameManager.Instance != null && !GameManager.Instance.IsPlaying) 
             return;
-
         Vector2 position = rb.position;
-
-        //move horizontally
-        position.x += direction * moveSpeed * Time. fixedDeltaTime;
-
+        position.x += direction * moveSpeed * Time. fixedDeltaTime; //move horizontally
         //reverses direction when platform reaches boundary
         if (position.x <= leftLimit) {
             position.x = leftLimit;
@@ -53,7 +49,6 @@ public class MovingLevels : MonoBehaviour{
             position.x = rightLimit;
             direction = -1;
         }
-
         //move rigidbody to calculated position
         rb.MovePosition(position);
     }

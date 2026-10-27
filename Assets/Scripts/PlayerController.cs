@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
-    public float moveSpeed = 6f; //horizonatl movement speed
+    public float moveSpeed = 6f; //horiontal movement speed
     public float jumpSpeed = 12f;
 
     public Transform groundCheck; //check if player is on platform
@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
 
     private Rigidbody2D rb;
     private Camera cam;
-    private bool isGrounded; //current and prev grounded states
+    private bool isGrounded; //whether player is on a platform
     private bool hasBeenHit; //prevents multiple death or win evens
     public float bounceMultiplier = 3f;
 
@@ -40,13 +40,12 @@ public class PlayerController : MonoBehaviour {
         rb.linearVelocity = new Vector2(h * moveSpeed, rb.linearVelocity.y);
         CheckGround(); //check if player on platform
         HandleJump(); //single jump
-        WrapAroundScreen(); //moe player to opposite side if leave left or right
+        WrapAroundScreen(); //move player to opposite side if leave left or right
         CheckFellOffScreen(); //gameover if player falls below camerea
     }
 
     private void CheckGround() {
-        // wasGrounded = isGrounded; //save prev grounded state
-        //player is grounded when check circle overlaps fround layer obj and player is not moving up
+        //check if player is grounded when player touching ground layer and player is not moving up
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer)
                      && rb.linearVelocity.y <= 0.1f;
         if (animator != null)
@@ -65,11 +64,10 @@ public class PlayerController : MonoBehaviour {
     private void WrapAroundScreen() {
         float limit = cam.orthographicSize * cam.aspect + 0.5f; //calculate cam's horiz boundary
         Vector3 p = transform.position;
-        if (p.x > limit) { //move player to opposite side of screen
+        if (p.x > limit)  //move player to opposite side of screen
             p.x = -limit;
-        } else if (p.x < -limit) {
+        else if (p.x < -limit) 
             p.x = limit;
-        }
         transform.position = p;
     }
 
@@ -130,8 +128,6 @@ public class PlayerController : MonoBehaviour {
         //shows the gameover state
         if (GameManager.Instance != null)
             GameManager.Instance.GameOver();
-        
-
         gameObject.SetActive(false); //hides the player after death
     }
 

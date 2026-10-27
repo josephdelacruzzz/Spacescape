@@ -2,10 +2,8 @@ using UnityEngine;
 
 public class AsteroidSpawner : MonoBehaviour {
     public GameObject asteroidPrefab;
-    // public float spawnInterval = 2.5f;
-    // public float fallSpeed = 3f;
     public float firstSpawnDelay = 2.25f; //delay before first asteroid appears
-    //asteroid spawn interval speed
+    //asteroid spawn interval 
     public float startInterval = 1.5f; 
     public float endInterval = 0.5f;
     //asteroid falling speed
@@ -21,7 +19,7 @@ public class AsteroidSpawner : MonoBehaviour {
     }
 
     void Update() {
-        //doesnt spawn asteroids on panels
+        //pauses asteroid spawning when panel is active
         if (GameManager.Instance != null && !GameManager.Instance.IsPlaying) 
             return;
         if (asteroidPrefab == null || cam == null)

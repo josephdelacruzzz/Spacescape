@@ -9,13 +9,12 @@ public class OneShot : MonoBehaviour {
     private bool oneShotReady;
     private float timeLeft;
 
-
     void Start() {
         UpdateUI(); //sets initial text
     }
 
     void Update() {
-        //input and timer deactivated if on panel
+        //input and timer paused if on panel
         if (GameManager.Instance != null && !GameManager.Instance.IsPlaying)
             return;
 

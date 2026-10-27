@@ -20,15 +20,13 @@ public class Levels : MonoBehaviour {
     public GameObject OneShotPickup;
     public float oneShotChance = 0.1f;
 
-    //public int seed = 1;
-
     [Header("Cross-Screen")]
     public float crossScreenChance = 0.25f;
     public float edgeBand = 2f;
     public int crossScreenCooldown = 3;
 
     [Header("Moving Platforms")]
-    public float movingPlatformChance = 0.15f;
+    public float movingPlatformChance = 0.12f;
     public float movingPlatformSpeed = 1.5f;
     public float startingMovingSpeed = 1.5f;
     public float endingMovingSpeed = 3.5f;
@@ -43,8 +41,8 @@ public class Levels : MonoBehaviour {
     }
 
     private void Build() {
-        Random.State oldState = Random.state; //random level generation
-        Random.InitState(System.Environment.TickCount); //different seeds
+        Random.State oldState = Random.state; //saves curr random state
+        Random.InitState(System.Environment.TickCount); //creates new layout each run
 
         float halfWidth = Camera.main.orthographicSize * Camera.main.aspect; //horizontal half width
         Transform parent = new GameObject("Platform").transform; //keeps generated object organized
@@ -58,8 +56,8 @@ public class Levels : MonoBehaviour {
 
 
         for (int i = 0; i < platformCount; i++) {
-            float t = i / (float)(platformCount - 1);  //progress through th elevel
-            y += Mathf.Lerp(minGap, maxGap, t); //increases vertical jump
+            float t = i / (float)(platformCount - 1);  //progress through the elevel
+            y += Mathf.Lerp(minGap, maxGap, t); //increases vertical dist between platforms
             float width = Mathf.Lerp(startWidth, endWidth, t); //makes platforms narrower
             float limit = halfWidth - width / 2f; //makes platforms stay within cam's view
             float x;
@@ -67,20 +65,21 @@ public class Levels : MonoBehaviour {
 
             if (crossScreenJump){ //places platform near opposite edge
                 float band = Mathf.Min(edgeBand, limit);
-
                 if (prevX >= 0f)
                     x = Random.Range(-limit, -limit + band);
                 else
                     x = Random.Range(limit - band, limit);
-
                 prepareCrossScreen = false;
                 crossScreenCooldownRemaining = crossScreenCooldown;
             } else { 
                 //decide if we begin a cross screen route
                 bool startCrossScreenRoute = i > 2 && !prepareCrossScreen && crossScreenCooldownRemaining <= 0 && Random.value < crossScreenChance;
-
                 if (startCrossScreenRoute) { //place current platform near one edge
-                    float edge = Random.value < 0.5f ? -limit : limit;
+                    float edge;
+                    if (Random.value < 0.5f) 
+                        edge = -limit;
+                    else
+                        edge = limit;
                     x = Mathf.Clamp(edge, prevX - horizontalStep, prevX + horizontalStep);
                     x = Mathf.Clamp(x, -limit, limit);
                     prepareCrossScreen = true;
@@ -104,12 +103,11 @@ public class Levels : MonoBehaviour {
             bool isMoving = i > 3 && Random.value < movingPlatformChance; //some platforms begin moving
             if (isMoving){
                 MovingLevels movingScript = p.GetComponent<MovingLevels>();
-                if (movingScript == null) {
+                if (movingScript == null) 
                     movingScript = p.AddComponent<MovingLevels>();
-                }
                 if (movingScript != null) { //increases speed of platforms further up
-                    float currentMovmentSpeed = Mathf.Lerp(startingMovingSpeed, endingMovingSpeed, t);
-                    movingScript.setMovement(currentMovmentSpeed, Mathf.Max(-limit, x-movingPlatformRange), Mathf.Min(limit, x+movingPlatformRange));
+                    float currentMovementSpeed = Mathf.Lerp(startingMovingSpeed, endingMovingSpeed, t);
+                    movingScript.setMovement(currentMovementSpeed, Mathf.Max(-limit, x-movingPlatformRange), Mathf.Min(limit, x+movingPlatformRange));
                 }
             }
 

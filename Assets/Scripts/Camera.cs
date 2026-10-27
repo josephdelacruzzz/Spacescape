@@ -5,7 +5,7 @@ public class CameraFollow : MonoBehaviour {
     public float yOffset = 10f; //distance between player and camera pos
     public float followSpeed = 5f; //how fast camera moves toward height
     private float baseY; //curr pos of camera
-    private float highestTargetY; //highest pos reached
+    private float highestTargetY; //highest cam target pos reached
 
     void Start() {
         baseY = transform.position.y; //starting height
@@ -18,7 +18,7 @@ public class CameraFollow : MonoBehaviour {
             highestTargetY = Mathf.Max(highestTargetY, target.position.y + yOffset);
             baseY = Mathf.Lerp(baseY, highestTargetY, followSpeed * Time.deltaTime);
         }
-        //keeps camera in the center and constant
+        //keeps camera centered horizontally
         transform.position = new Vector3(0f, baseY, -10f);
     }
 }

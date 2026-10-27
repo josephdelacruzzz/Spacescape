@@ -19,11 +19,11 @@ public class Shield : MonoBehaviour {
     }
 
     void Update() {
-        //input and timer deactivated if on panel
+        //input and timer paused if on panel
         if (GameManager.Instance != null && !GameManager.Instance.IsPlaying)
             return;
 
-        //activates oneshot
+        //activates shield
         if (!isActive && shieldReady && Input.GetKeyDown(KeyCode.E))
             ActivateShield();
         
@@ -75,9 +75,8 @@ public class Shield : MonoBehaviour {
     public void OnShieldHit() {
         if (!isActive)
             return;
-        if (AudioManager.Instance != null)
+        if (AudioManager.Instance != null) //plays block sound when shield contacts asteroid
             AudioManager.Instance.Play(AudioManager.Instance.shieldBlockSound);
-        //protects player from asteroid
         Debug.Log("Shield blocked asteroid.");
     }
 

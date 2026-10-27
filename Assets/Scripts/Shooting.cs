@@ -13,7 +13,6 @@ public class Shooting : MonoBehaviour {
 
     private Animator animator;
     private SpriteRenderer bodyRenderer;
-    private bool wasShooting;
     private static int IsShootingHash = Animator.StringToHash("IsShooting");
     private static int AimUpHash = Animator.StringToHash("AimUp");
 
@@ -42,22 +41,22 @@ public class Shooting : MonoBehaviour {
         if (aimDirection.sqrMagnitude < 0.01f)
             return;
 
-        //convert dir to unit vector and roatte gun 
+        //convert dir to unit vector and rotates gun 
         aimDirection.Normalize();
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         if (angle < 0f)
             angle += 360f;
-        angle = Mathf.Clamp(angle, minAimAngle, maxAimAngle);
-        aimDirection = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
-        gun.right = aimDirection;
-        if (Mathf.Abs(aimDirection.x) > 0.1f && bodyRenderer != null) 
-            bodyRenderer.flipX = aimDirection.x < 0f;
+        angle = Mathf.Clamp(angle, minAimAngle, maxAimAngle); //only values in allowed arc
+        aimDirection = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad)); //converts angle to direction vector
+        gun.right = aimDirection; //rotate to aiming direction
+        if (Mathf.Abs(aimDirection.x) > 0.1f && bodyRenderer != null) //flip astronaut when aiming to the left
+            bodyRenderer.flipX = aimDirection.x < 0f; //check aiming angle
         bool aimingUp = angle >= 67.5f && angle <= 112.5f;
-        if (animator != null) {
+        if (animator != null) { 
             animator.SetBool(IsShootingHash, IsShooting);
             animator.SetBool(AimUpHash, aimingUp);
         }
-        if (IsShooting && Time.time >= nextFireTime) {
+        if (IsShooting && Time.time >= nextFireTime) { //fires when mouse held and cooldown ended
             nextFireTime = Time.time + fireCooldown;
             Fire(aimDirection);
         }

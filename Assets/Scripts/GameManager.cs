@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour {
     public TMP_Text gameOverScoreText;
     public TMP_Text gameOverTitleText;
     public GameObject titlePanel;
+    public TMP_Text winHighScoreText;
+    public TMP_Text gameOverHighScoreText;
 
     [Header("Timer")]
     public int startingTime = 999;
@@ -100,7 +102,7 @@ public class GameManager : MonoBehaviour {
             timerText.gameObject.SetActive(true);
     }
 
-    //calculates values
+    //updates timer, score, and difficulty
     void Update() {
         //title -> start game
         if (State == GameState.Title) {
@@ -148,13 +150,10 @@ public class GameManager : MonoBehaviour {
     private void HideGameplayUI() {
         if (scoreText != null)
             scoreText.gameObject.SetActive(false);
-
         if (shieldText != null)
             shieldText.gameObject.SetActive(false);
-
         if (oneShotText != null)
             oneShotText.gameObject.SetActive(false);
-
         if (timerText != null)
             timerText.gameObject.SetActive(false);
     }
@@ -169,13 +168,12 @@ public class GameManager : MonoBehaviour {
 
         //updates UI correctly
         HideGameplayUI();
+        HighScore.TrySetHighScore(Score);
         UpdateUI();
         if (gameOverTitleText != null)
             gameOverTitleText.text = "GAME OVER!";
-
         if (gameOverScoreText != null)
-            gameOverScoreText.text = "Score: " + Score + "\n\'R' to Restart";
-
+            gameOverScoreText.text = "Score: " + Score +  "\nHigh Score: " + HighScore.SCORE + "\n\n\'R' to Restart";
         if (gameOverPanel != null)
             gameOverPanel.SetActive(true);
         Debug.Log("GAME OVER. Score: " + Score);
@@ -195,14 +193,15 @@ public class GameManager : MonoBehaviour {
         if (AudioManager.Instance != null)
             AudioManager.Instance.Play(AudioManager.Instance.winSound);
 
-        //updates UI correctly
+        //updates UI correctly by calculating bonus and displaying win results
         State = GameState.Won;
+        HighScore.TrySetHighScore(Score);
         HideGameplayUI();
         UpdateUI();
         if (winTitleText != null)
             winTitleText.text = "YOU WIN!";
         if (winScoreText != null) 
-            winScoreText.text = "Score: " + Score + "\nTime Bonus: +" + timeBonus + "\n\'R' to Restart";
+            winScoreText.text = "Score: " + Score + "\nTime Bonus: +" + timeBonus + "\nHigh Score: " + HighScore.SCORE + "\n\n\'R' to Restart";
         if (winPanel != null) 
             winPanel.SetActive(true);
 
