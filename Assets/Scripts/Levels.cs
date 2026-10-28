@@ -27,7 +27,6 @@ public class Levels : MonoBehaviour {
 
     [Header("Moving Platforms")]
     public float movingPlatformChance = 0.12f;
-    public float movingPlatformSpeed = 1.5f;
     public float startingMovingSpeed = 1.5f;
     public float endingMovingSpeed = 3.5f;
     public float movingPlatformRange = 2f;

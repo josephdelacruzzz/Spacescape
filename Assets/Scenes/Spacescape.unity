@@ -463,24 +463,24 @@ MonoBehaviour:
   platformCount: 50
   firstGroundY: -5
   minGap: 2.1
-  maxGap: 2.3
+  maxGap: 2.2
   startWidth: 3
   endWidth: 1.5
-  horizontalStep: 3.8
+  horizontalStep: 3.6
   ShieldPickup: {fileID: 9030453415698754149, guid: f1cc5551048b44b46b34b3047bf5ece2, type: 3}
   shieldChance: 0.1
   OneShotPickup: {fileID: 6957232871978524567, guid: a34fdfffc3e60400692ebd54c96d09ea, type: 3}
   oneShotChance: 0.1
-  crossScreenChance: 0.3
+  crossScreenChance: 0.4
   edgeBand: 1.8
   crossScreenCooldown: 3
-  movingPlatformChance: 0.3
+  movingPlatformChance: 0.2
   movingPlatformSpeed: 1.5
   startingMovingSpeed: 1.5
-  endingMovingSpeed: 3
+  endingMovingSpeed: 2.5
   movingPlatformRange: 2
   springPrefab: {fileID: 2305886001383946052, guid: c5fe68e32f3c440ae80ebe5052513f3a, type: 3}
-  springChance: 0.12
+  springChance: 0.1
 --- !u!1 &373862880
 GameObject:
   m_ObjectHideFlags: 0
